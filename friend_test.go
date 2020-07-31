@@ -10,6 +10,6 @@ func TestCreateFriend(t *testing.T) {
 
 	assert.Equal(t, "Doe", friend.LastName)
 	assert.Equal(t, "John", friend.FirstName)
-	assert.Equal(t, true, NewBirthday(1982, 10, 8).isSame(friend.Birthday))
+	assert.Equal(t, NewBirthday(1982, 10, 8), friend.Birthday)
 	assert.Equal(t, "john.doe@foobar.com", friend.Email)
 }

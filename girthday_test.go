@@ -12,4 +12,3 @@ func TestCreateBirthday(t *testing.T) {
 	assert.Equal(t, 1, birthday.Month)
 	assert.Equal(t, 1, birthday.Day)
 }
-
