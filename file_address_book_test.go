@@ -17,8 +17,10 @@ func TestGetFriendsFromFile(t *testing.T) {
 
 	assert.Equal(t, "John", john.FirstName)
 	assert.Equal(t, "Doe", john.LastName)
+	assert.Equal(t, "john.doe@foobar.com", john.Email)
 	assert.Equal(t, NewBirthday(1982, 10, 8), john.Birthday)
 	assert.Equal(t, "Mary", mary.FirstName)
 	assert.Equal(t, "Ann", mary.LastName)
+	assert.Equal(t, "mary.ann@foobar.com", mary.Email)
 	assert.Equal(t, NewBirthday(1975, 9, 11), mary.Birthday)
 }

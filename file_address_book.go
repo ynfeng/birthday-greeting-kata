@@ -39,7 +39,7 @@ func (addressBook FileAddressBook) friends() []Friend {
 		birthday := NewBirthday(year, month, day)
 		lastName := strings.Trim(lineItems[0], " ")
 		firstName := strings.Trim(lineItems[1], " ")
-		email := strings.Trim(lineItems[3], "")
+		email := strings.Trim(lineItems[3], " ")
 		friend := NewFriend(lastName, firstName, birthday, email)
 		result = append(result, friend)
 	}
