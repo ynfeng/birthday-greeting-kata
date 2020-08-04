@@ -6,9 +6,9 @@ import (
 )
 
 func TestGetFriendsFromFile(t *testing.T) {
-	addressBook := NewFileAddressBook("./friends.data")
+	addressBook := NewFileAddressBook("./Friends.data")
 
-	friends := addressBook.friends()
+	friends := addressBook.Friends()
 
 	assert.Equal(t, len(friends), 2)
 

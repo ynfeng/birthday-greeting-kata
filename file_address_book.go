@@ -12,7 +12,7 @@ type FileAddressBook struct {
 	filePath string
 }
 
-func (addressBook FileAddressBook) friends() []Friend {
+func (addressBook FileAddressBook) Friends() []Friend {
 	fi, _ := os.Open(addressBook.filePath)
 	defer fi.Close()
 
