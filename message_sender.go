@@ -1,5 +1,5 @@
 package birthday_greeting_kata
 
-type MsgSender interface {
-	send() error
+type MessageSender interface {
+	send(msg Message) error
 }
